@@ -1,0 +1,67 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+.cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.seaction-heading {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: grey;
+}
+.cards .card {
+   
+    flex-basis: 22%;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px 5px;
+}
+
+.cards .card img {
+    width:80px ;
+    height: 80px;
+}
+
+
+.cards .card h1 {
+    font-size: 16px;
+    font-weight: 500;
+    color: blue;
+    margin: 10px 0;
+}
+
+.cards .card p {
+    font-size: 14px;
+    color: rgba(39, 36, 36, 0.791);
+    align-items: center;
+    line-height: 1.2rem;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+@media (max-width: 500px){
+    .cards .card {
+        flex-basis: 100%;
+    }
+}
+
+
+@media (min-width:500px ) and (max-width:900px){
+    .cards .card {
+        flex-basis: 50%;
+        padding: 10px 10px;
+    }
+}
